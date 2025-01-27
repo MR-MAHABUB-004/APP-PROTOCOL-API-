@@ -9,7 +9,7 @@ app.get('/status', (req, res) => {
             return res.status(500).send('Error reading status file');
         }
         const statuses = JSON.parse(data);
-        const author = MR᭄﹅MAHABUB﹅ メꪜ 
+        
         const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
         res.json(randomStatus);
     });
